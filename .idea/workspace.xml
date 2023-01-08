@@ -4,49 +4,59 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="667d64ce-bc68-44c2-a504-212159a6f68e" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/amqp/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/com/okayreet/amqp/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/com/okayreet/amqp/RabbitMQMessageProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigw/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigw/src/main/java/com/okayreet/apigw/ApiGWApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigw/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigw/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/okayreet/clients/fraud/FraudClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/okayreet/clients/notification/NotificationClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/okayreet/clients/notification/NotificationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/okayreet/notification/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/okayreet/notification/NotificationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/okayreet/notification/NotificationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/okayreet/notification/NotificationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/okayreet/notification/NotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="667d64ce-bc68-44c2-a504-212159a6f68e" name="Changes" comment="Api GateWay Service">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/okayreet/notification/NotificationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/okayreet/notification/rabbitmq/NotificationConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amqp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/amqp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apigw/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/target/classes/com/okayreet/clients/fraud/FraudCheckResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/target/classes/com/okayreet/clients/fraud/FraudClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/target/classes/com/okayreet/clients/notification/NotificationClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/target/classes/com/okayreet/clients/notification/NotificationRequest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/okayreet/customer/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/okayreet/customer/CustomerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/okayreet/customer/CustomerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/okayreet/customer/CustomerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/okayreet/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/okayreet/customer/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/okayreet/customer/FraudCheckResponse.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/CustomerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/CustomerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/CustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/FraudCheckResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/Customer$CustomerBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/CustomerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/CustomerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/CustomerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/CustomerRegistrationRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/CustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/CustomerService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/classes/com/okayreet/eurekaserver/EurekaServerApplication.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/okayreet/fraud/FraudCheckResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/okayreet/clients/fraud/FraudCheckResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/okayreet/fraud/FraudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/com/okayreet/fraud/FraudController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fraud/FraudCheckResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fraud/FraudController.class" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fraud/FraudController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fraud/FraudApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fraud/FraudCheckHistory$FraudCheckHistoryBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fraud/FraudCheckHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fraud/FraudCheckHistoryRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fraud/FraudCheckService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fraud/FraudController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fruad/FraudApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fruad/FraudCheckHistory$FraudCheckHistoryBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fruad/FraudCheckHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fruad/FraudCheckHistoryRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fruad/FraudCheckResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fruad/FraudCheckService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fruad/FraudController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/com/okayreet/notification/NotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/com/okayreet/notification/NotificationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/target/classes/com/okayreet/notification/Notification$NotificationBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/target/classes/com/okayreet/notification/Notification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/target/classes/com/okayreet/notification/NotificationApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/target/classes/com/okayreet/notification/NotificationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/target/classes/com/okayreet/notification/NotificationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/target/classes/com/okayreet/notification/NotificationService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +83,13 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="useMavenConfig" value="true" />
+        <option name="usePluginRegistry" value="true" />
       </MavenGeneralSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="build-docker-image" />
+      </list>
     </option>
   </component>
   <component name="ProjectId" id="2JpzPofWZZhyea1h4eM648VzEGd" />
@@ -84,25 +100,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/darkerror/vsCode/microservice/clients/src/main/java/com/okayreet/clients/notification",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.32528734",
-    "settings.editor.selected.configurable": "Errors",
-    "spring.configuration.checksum": "45f2b97ef7cfa68f4f4b8cacd93bde53"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/darkerror/vsCode/microservice/clients/src/main/java/com/okayreet/clients/notification&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.32528734&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;6c8a25e190aef886a924f7384488ccd9&quot;
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.okayreet.customer" />
@@ -126,7 +145,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Spring Boot.NotificationApplication">
     <configuration name="ApiGWApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="apigw" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.okayreet.apigw.ApiGWApplication" />
@@ -189,9 +208,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.zipkin: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
+          <option name="services">
+            <list>
+              <option value="zipkin" />
+            </list>
+          </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
         </settings>
       </deployment>
@@ -199,11 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Spring Boot.NotificationApplication" />
         <item itemvalue="Spring Boot.FraudApplication" />
+        <item itemvalue="Spring Boot.NotificationApplication" />
         <item itemvalue="Spring Boot.ApiGWApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
+        <item itemvalue="Docker.docker-compose.yml.zipkin: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +250,12 @@
       <workItem from="1672878399666" duration="2609000" />
       <workItem from="1672942599591" duration="1378000" />
       <workItem from="1672957399427" duration="2631000" />
-      <workItem from="1672960994463" duration="17042000" />
+      <workItem from="1672960994463" duration="18885000" />
+      <workItem from="1673128905843" duration="8852000" />
+      <workItem from="1673142351326" duration="1334000" />
+      <workItem from="1673143701489" duration="416000" />
+      <workItem from="1673144132173" duration="1074000" />
+      <workItem from="1673145777462" duration="1630000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1672963877697</created>
@@ -235,11 +264,39 @@
       <option name="project" value="LOCAL" />
       <updated>1672963877697</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Api GateWay Service">
+      <created>1673064849109</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673064849109</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Api GateWay Service">
+      <created>1673064860432</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673064860432</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
+    <option featureType="dependencySupport" implementationName="java:com.google.inject:guice" />
+    <option featureType="dependencySupport" implementationName="java:io.projectreactor:reactor-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.cloud:spring-cloud-context" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.validator:hibernate-validator" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-messaging" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -254,24 +311,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="Api GateWay Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Api GateWay Service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/customer/src/main/java/com/okayreet/customer/CustomerService.java</url>
-          <line>25</line>
+          <line>23</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/customer/src/main/java/com/okayreet/customer/CustomerService.java</url>
-          <line>28</line>
+          <line>26</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/customer/src/main/java/com/okayreet/customer/CustomerService.java</url>
-          <line>30</line>
+          <line>28</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -288,6 +346,11 @@
           <url>file://$PROJECT_DIR$/fraud/src/main/java/com/okayreet/fraud/FraudController.java</url>
           <line>21</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notification/src/main/java/com/okayreet/notification/NotificationApplication.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

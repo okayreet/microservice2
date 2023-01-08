@@ -18,10 +18,11 @@ services:
   zipkin:
     image: openzipkin/zipkin
     container_name: zipkin
-#    volumes:
-#      - zipkin:/var/lib/zipkin
+    volumes:
+      - zipkin:/var/lib/zipkin
     ports:
       - "9411:9411"
+    restart: unless-stopped
 #rabbitmq container
   rabbitmq:
     image: rabbitmq:3.9.11-management-alpine
@@ -29,6 +30,9 @@ services:
     ports:
       - "5672:5672"
       - "15672:15672"
+    volumes:
+      - rabbitmq:/var/lib/rabbitmq
+    restart: unless-stopped
 #pgadmin container
   pgadmin:
     container_name: pgadmin
