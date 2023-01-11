@@ -1,5 +1,4 @@
 services:
-#postgres container
   postgres:
     container_name: postgres
     image: postgres:alpine
@@ -7,33 +6,28 @@ services:
       POSTGRES_USER: okayreet
       POSTGRES_PASSWORD: password
       PGDATA: /data/postgres
-    volumes:
-      -   postgres:/var/lib/postgresql/data
     ports:
       - '5432:5432'
     networks:
       - postgres
     restart: unless-stopped
-#zipkin container
   zipkin:
     image: openzipkin/zipkin
     container_name: zipkin
-    volumes:
-      - zipkin:/var/lib/zipkin
     ports:
       - "9411:9411"
+    networks:
+      - spring
     restart: unless-stopped
-#rabbitmq container
   rabbitmq:
     image: rabbitmq:3.9.11-management-alpine
     container_name: rabbitmq
     ports:
       - "5672:5672"
       - "15672:15672"
-    volumes:
-      - rabbitmq:/var/lib/rabbitmq
+    networks:
+      - spring
     restart: unless-stopped
-#pgadmin container
   pgadmin:
     container_name: pgadmin
     image: dpage/pgadmin4
@@ -41,20 +35,95 @@ services:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
       PGADMIN_CONFIG_SERVER_MODE: 'False'
-    volumes:
-      - pgadmin:/var/lib/pgadmin
     ports:
       - "5050:80"
     networks:
       - postgres
     restart: unless-stopped
+#  eureka-server:
+#    image: darkerror/eureka-server:latest
+#    container_name: eureka-server
+#    ports:
+#      - "8761:8761"
+#    environment:
+#      - SPRING_PROFILES_ACTIVE=docker
+#    networks:
+#      - spring
+#    depends_on:
+#      - zipkin
+#    restart: unless-stopped
+#  apigw:
+#    image: darkerror/apigw:latest
+#    container_name: apigw
+#    ports:
+#      - "8083:8083"
+#    environment:
+#      - SPRING_PROFILES_ACTIVE=docker
+#    networks:
+#      - spring
+#    depends_on:
+#      - zipkin
+#      - eureka-server
+#    restart: unless-stopped
+  customer:
+    image: darkerror/customer:latest
+    container_name: customer
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+      - postgres
+    depends_on:
+      - zipkin
+#      - eureka-server
+      - postgres
+      - rabbitmq
+    restart: unless-stopped
+  fraud:
+    image: darkerror/fraud:latest
+    container_name: fraud
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+      - postgres
+    depends_on:
+      - zipkin
+#      - eureka-server
+      - postgres
+      - rabbitmq
+    restart: unless-stopped
+  notification:
+    image: darkerror/notification:latest
+    container_name: notification
+    ports:
+      - "8082:8082"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+      - postgres
+    depends_on:
+      - zipkin
+#      - eureka-server
+      - postgres
+      - rabbitmq
+    restart: unless-stopped
 #network
 networks:
   postgres:
     driver: bridge
+  spring:
+    driver: bridge
 #volumes
-volumes:
-  postgres:
-  pgadmin:
-  zipkin:
-  rabbitmq:
+#volumes:
+#  postgres:
+#  pgadmin:
+#  zipkin:
+#  rabbitmq:
+#  apigw:
+#  eureka-server:

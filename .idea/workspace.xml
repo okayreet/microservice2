@@ -4,60 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="667d64ce-bc68-44c2-a504-212159a6f68e" name="Changes" comment="Api GateWay Service">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/okayreet/notification/NotificationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/okayreet/notification/rabbitmq/NotificationConsumer.java" afterDir="false" />
+    <list default="true" id="667d64ce-bc68-44c2-a504-212159a6f68e" name="Changes" comment="first prototype">
+      <change afterPath="$PROJECT_DIR$/apigw/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-default.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-kube.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/resources/application-kube.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraud/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraud/src/main/resources/application-kube.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/configmap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/statefulset.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/volume.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/rabbitmq/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/rabbitmq/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/rabbitmq/rbac.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/rabbitmq/services.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/rabbitmq/statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/zipkin/service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/zipkin/statefulset.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/customer/deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/customer/service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/fruad/deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/fruad/service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/notification/deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/notification/service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/application-kube.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amqp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/amqp/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apigw/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apigw/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/target/classes/com/okayreet/clients/fraud/FraudCheckResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/target/classes/com/okayreet/clients/fraud/FraudClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/target/classes/com/okayreet/clients/notification/NotificationClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/target/classes/com/okayreet/clients/notification/NotificationRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/okayreet/clients/fraud/FraudClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/okayreet/clients/fraud/FraudClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/okayreet/clients/notification/NotificationClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/okayreet/clients/notification/NotificationClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/okayreet/customer/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/okayreet/customer/CustomerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/okayreet/customer/CustomerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/okayreet/customer/CustomerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/okayreet/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/okayreet/customer/CustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/Customer$CustomerBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/CustomerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/CustomerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/CustomerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/CustomerRegistrationRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/CustomerRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/okayreet/customer/CustomerService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/classes/com/okayreet/eurekaserver/EurekaServerApplication.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fraud/FraudApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fraud/FraudCheckHistory$FraudCheckHistoryBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fraud/FraudCheckHistory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fraud/FraudCheckHistoryRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fraud/FraudCheckService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fraud/FraudController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fruad/FraudApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fruad/FraudCheckHistory$FraudCheckHistoryBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fruad/FraudCheckHistory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fruad/FraudCheckHistoryRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fruad/FraudCheckResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fruad/FraudCheckService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/okayreet/fruad/FraudController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/okayreet/fraud/FraudApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/com/okayreet/fraud/FraudApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification/src/main/java/com/okayreet/notification/NotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/com/okayreet/notification/NotificationApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/target/classes/com/okayreet/notification/Notification$NotificationBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/target/classes/com/okayreet/notification/Notification.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/target/classes/com/okayreet/notification/NotificationApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/target/classes/com/okayreet/notification/NotificationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/target/classes/com/okayreet/notification/NotificationRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/target/classes/com/okayreet/notification/NotificationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +68,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="minikube" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -100,25 +96,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/darkerror/vsCode/microservice/clients/src/main/java/com/okayreet/clients/notification&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.32528734&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;6c8a25e190aef886a924f7384488ccd9&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/darkerror/vsCode/microservice/customer/src/main/resources",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.32528734",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "6c8a25e190aef886a924f7384488ccd9"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -127,8 +124,11 @@
       <recent name="com.okayreet.customer" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\darkerror\vsCode\microservice\clients\src\main\java\com\okayreet\clients\notification" />
-      <recent name="C:\Users\darkerror\vsCode\microservice\fruad\src\main\resources" />
+      <recent name="C:\Users\darkerror\vsCode\microservice\customer\src\main\resources" />
+      <recent name="C:\Users\darkerror\vsCode\microservice\fraud\src\main\resources" />
+      <recent name="C:\Users\darkerror\vsCode\microservice\notification\src\main\resources" />
+      <recent name="C:\Users\darkerror\vsCode\microservice\eureka-server\src\main\resources" />
+      <recent name="C:\Users\darkerror\vsCode\microservice\apigw\src\main\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -145,22 +145,9 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.NotificationApplication">
-    <configuration name="ApiGWApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="apigw" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.okayreet.apigw.ApiGWApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.okayreet.apigw.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Docker.docker-compose.yml.customer: Compose Deployment">
     <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <option name="ACTIVE_PROFILES" />
+      <option name="ACTIVE_PROFILES" value="default" />
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="customer" />
@@ -169,20 +156,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="eureka-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.okayreet.eurekaserver.EurekaServerApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.okayreet.eurekaserver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FraudApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="FraudApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="default" />
       <module name="fraud" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.okayreet.fraud.FraudApplication" />
       <extension name="coverage">
@@ -196,6 +171,7 @@
       </method>
     </configuration>
     <configuration name="NotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="default" />
       <module name="notification" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.okayreet.notification.NotificationApplication" />
       <extension name="coverage">
@@ -207,6 +183,45 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="docker-compose.yml.customer: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="customer" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.fraud: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="fraud" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.notification: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="notification" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
     <configuration name="docker-compose.yml.zipkin: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
@@ -221,12 +236,21 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Docker.docker-compose.yml.customer: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.fraud: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.notification: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.zipkin: Compose Deployment" />
+      <item itemvalue="Spring Boot.FraudApplication" />
+      <item itemvalue="Spring Boot.CustomerApplication" />
+      <item itemvalue="Spring Boot.NotificationApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.FraudApplication" />
+        <item itemvalue="Docker.docker-compose.yml.customer: Compose Deployment" />
         <item itemvalue="Spring Boot.NotificationApplication" />
-        <item itemvalue="Spring Boot.ApiGWApplication" />
-        <item itemvalue="Spring Boot.EurekaServerApplication" />
+        <item itemvalue="Docker.docker-compose.yml.fraud: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.notification: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.zipkin: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -255,7 +279,14 @@
       <workItem from="1673142351326" duration="1334000" />
       <workItem from="1673143701489" duration="416000" />
       <workItem from="1673144132173" duration="1074000" />
-      <workItem from="1673145777462" duration="1630000" />
+      <workItem from="1673145777462" duration="1692000" />
+      <workItem from="1673215261163" duration="3890000" />
+      <workItem from="1673219634909" duration="5448000" />
+      <workItem from="1673281559675" duration="824000" />
+      <workItem from="1673306908436" duration="809000" />
+      <workItem from="1673321971240" duration="4981000" />
+      <workItem from="1673326984377" duration="1415000" />
+      <workItem from="1673369224531" duration="7950000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1672963877697</created>
@@ -278,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673064860432</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="first prototype">
+      <created>1673147463414</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673147463414</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +350,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="Api GateWay Service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Api GateWay Service" />
+    <MESSAGE value="first prototype" />
+    <option name="LAST_COMMIT_MESSAGE" value="first prototype" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -349,9 +388,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/notification/src/main/java/com/okayreet/notification/NotificationApplication.java</url>
-          <line>25</line>
+          <line>30</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.net.UnknownHostException" package="java.net" />
+          <option name="timeStamp" value="8" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
