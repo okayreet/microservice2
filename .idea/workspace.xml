@@ -4,53 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="667d64ce-bc68-44c2-a504-212159a6f68e" name="Changes" comment="first prototype">
-      <change afterPath="$PROJECT_DIR$/apigw/src/main/resources/application-docker.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-default.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-docker.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-kube.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/resources/application-docker.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/resources/application-kube.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application-docker.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/resources/application-docker.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/resources/application-kube.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/configmap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/statefulset.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/volume.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/rabbitmq/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/rabbitmq/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/rabbitmq/rbac.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/rabbitmq/services.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/rabbitmq/statefulset.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/zipkin/service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/zipkin/statefulset.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/customer/deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/customer/service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/fruad/deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/fruad/service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/notification/deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/notification/service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/application-docker.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/application-kube.yml" afterDir="false" />
+    <list default="true" id="667d64ce-bc68-44c2-a504-212159a6f68e" name="Changes" comment="before kafka">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigw/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apigw/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/okayreet/clients/fraud/FraudClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/okayreet/clients/fraud/FraudClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/okayreet/clients/notification/NotificationClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/okayreet/clients/notification/NotificationClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/okayreet/customer/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/okayreet/customer/CustomerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/okayreet/fraud/FraudApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/com/okayreet/fraud/FraudApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/java/com/okayreet/notification/NotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/com/okayreet/notification/NotificationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +63,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/darkerror/vsCode/microservice/customer/src/main/resources",
+    "last_opened_file_path": "C:/Users/darkerror/vsCode/security/security",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -145,7 +101,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.customer: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml.pgadmin: Compose Deployment">
     <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" value="default" />
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
@@ -210,12 +166,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.notification: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.pgadmin: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="notification" />
+              <option value="pgadmin" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -223,12 +179,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.zipkin: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.postgres: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="zipkin" />
+              <option value="postgres" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -237,21 +193,21 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml.pgadmin: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.customer: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.fraud: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.notification: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.zipkin: Compose Deployment" />
       <item itemvalue="Spring Boot.FraudApplication" />
       <item itemvalue="Spring Boot.CustomerApplication" />
       <item itemvalue="Spring Boot.NotificationApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.pgadmin: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.customer: Compose Deployment" />
         <item itemvalue="Spring Boot.NotificationApplication" />
         <item itemvalue="Docker.docker-compose.yml.fraud: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.notification: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.zipkin: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -287,6 +243,11 @@
       <workItem from="1673321971240" duration="4981000" />
       <workItem from="1673326984377" duration="1415000" />
       <workItem from="1673369224531" duration="7950000" />
+      <workItem from="1673447998801" duration="693000" />
+      <workItem from="1673550930551" duration="6055000" />
+      <workItem from="1673723861390" duration="355000" />
+      <workItem from="1673725307328" duration="1051000" />
+      <workItem from="1673739772896" duration="298000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1672963877697</created>
@@ -316,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673147463414</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="before kafka">
+      <created>1673448051599</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673448051599</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +319,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="Api GateWay Service" />
     <MESSAGE value="first prototype" />
-    <option name="LAST_COMMIT_MESSAGE" value="first prototype" />
+    <MESSAGE value="before kafka" />
+    <option name="LAST_COMMIT_MESSAGE" value="before kafka" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
